@@ -47,7 +47,7 @@ class VersionDebugPanel(DebugPanel):
             else:
                 continue
             if isinstance(version, (list, tuple)):
-                version = '.'.join(str(o) for o in version)
+                version = '.'.join([str(o) for o in version])
             versions[name] = version
 
         context = self.context.copy()

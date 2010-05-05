@@ -110,7 +110,7 @@ class TokenList(Token):
         Token.__init__(self, None, None)
 
     def __unicode__(self):
-        return ''.join(unicode(x) for x in self.flatten())
+        return ''.join([unicode(x) for x in self.flatten()])
 
     def __str__(self):
         return unicode(self).encode('latin-1')
