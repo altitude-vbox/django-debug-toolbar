@@ -147,6 +147,7 @@
 	};
 	$(document).ready(function() {
 		djdt.init();
+		djdt.close();
 	});
 });
 
